@@ -1,2 +1,3 @@
 # algorithms-coding-challenges
-This repository will contain a collection of coding challenges aimed at enhancing problem-solving skills for technical interviews and beyond. It includes problems on various topics with solutions and explanations.
+This repository will contain a curated collection of coding challenges and solutions aimed at improving problem-solving skills in software development. It serves as a resource for anyone preparing for technical interviews or looking to enhance their understanding of computer science fundamentals. The challenges cover a wide range of topics, including data structures, algorithms, complexity analysis, and more. Each problem is accompanied by a solution and an explanation to help you understand the core concepts and techniques used. Whether you're a beginner or an experienced developer, this repository is a valuable tool for sharpening your coding abilities.
+
