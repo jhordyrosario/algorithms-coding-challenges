@@ -5,7 +5,7 @@ public class Program{
     public static void Main(string[] args){
             Console.WriteLine("Hello, World!");
             
-            TwoSumSolutions.TwoSum([2,7,11,15], 9);
+            new TwoSumSolutions().TwoSum([2,7,11,15], 9);
     }
 }
 
