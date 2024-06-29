@@ -2,7 +2,7 @@ namespace AlgorithmsCodingChallenges;
 
 public class TwoSumSolutions
 {
-    public int[] TwoSum(int[] nums, int target) {
+    public int[] TwoSum1(int[] nums, int target) {
         
         for(var i=0; i<=nums.Length-2 ; i++)
         {
@@ -13,6 +13,25 @@ public class TwoSumSolutions
                     return [i,j];
                 }     
             }
+        }
+
+        throw new Exception("Two Sum Not Found");
+    }
+
+    public int[] TwoSum2(int[] nums, int target) {
+        
+        var valuesIndexes = new Dictionary<int, int>();
+
+        for(var i=0; i<nums.Length ; i++)
+        {
+            var searchedValue = target - nums[i];
+
+            if(valuesIndexes.TryGetValue(searchedValue, out var searchedIndex))
+            {
+                return [searchedIndex, i];
+            }
+
+            valuesIndexes.Add(nums[i], i);
         }
 
         throw new Exception("Two Sum Not Found");
