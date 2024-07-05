@@ -7,7 +7,7 @@ public class Program{
 
             var x = new PalindromeSolutions();
 
-            x.IsPalindrome(10);
+            x.IsPalindrome2(756);
     }
 }
 

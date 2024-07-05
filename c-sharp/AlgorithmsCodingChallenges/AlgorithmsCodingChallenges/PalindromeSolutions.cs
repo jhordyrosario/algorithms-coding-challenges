@@ -15,5 +15,25 @@ namespace AlgorithmsCodingChallenges;
 
             return true;
         }
+
+        public bool IsPalindrome2(int number)
+        {
+            if(number < 0)
+            {
+                return false;
+            }
+
+            var inverted = string.Empty;
+            var division = number;
+            
+            while (division != 0)
+            {
+                int module = division % 10;
+                inverted += module; 
+                division /= 10;
+            }
+
+            return number == int.Parse(inverted);
+        }
         
     }
