@@ -35,5 +35,26 @@ namespace AlgorithmsCodingChallenges;
 
             return number == int.Parse(inverted);
         }
+
+        public bool IsPalindrome3(int number)
+        {
+            var stringNumber = number.ToString();
+            var length = stringNumber.Length;
+            var left = 0;
+            var right = length - 1;
+
+            while (left < right)
+            {
+                if (char.ToLower(stringNumber[left]) != char.ToLower(stringNumber[right]))
+                {
+                    return false;
+                }
+
+                left++;
+                right--;
+            }
+
+            return true;
+        }
         
     }

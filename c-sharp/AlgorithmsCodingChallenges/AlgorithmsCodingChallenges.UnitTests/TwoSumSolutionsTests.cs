@@ -3,7 +3,7 @@ namespace AlgorithmsCondingChallenges.UnitTests;
 using AlgorithmsCodingChallenges;
 
 [TestFixture]
-public class Tests
+public class TwoSumSolutionsTests
 {
     private TwoSumSolutions _twoSumSolutions { get; set; }
 
